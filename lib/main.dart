@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'ExtractArgumentsScreen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -11,6 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+
+      routes: {
+        ExtractArgumentsScreen.routeName: (context) =>
+        const ExtractArgumentsScreen(),
+      },
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
